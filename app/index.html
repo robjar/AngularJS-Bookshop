@@ -7,9 +7,13 @@
 <body>
   <p>Bookshop</p>
   <ul>
-    <li>Book 1</li>
-    <li>Book 2</li>
-    <li>Book 3</li>
+    <li ng-repeat="i in [1,2,3,4]">Book {{i}}</li>
   </ul>
+  
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('js/app.js');
+  </script>
 </body>
 </html>
