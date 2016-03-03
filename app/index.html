@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>AngularJS-Bookshop</title>
 </head>
+
 <body>
-  <p>Bookshop</p>
-  <ul>
-    <li ng-repeat="i in [1,2,3,4]">Book {{i}}</li>
-  </ul>
-  
+
+  <div class="header-wrapper">
+    <span class="logo pull-left">Bookshop</span>
+    <span class="tagline pull-left">The greatest collection of books in the world!</span>
+    <div class="nav-wrapper pull-left">
+      <ul class="nav nav-pills">
+        <li class="active">
+          <a href="#">Books</a>
+        </li>
+        <li>
+          <a href="#">Cart</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
   <script>
     System.import('js/app.js');
   </script>
 </body>
+
 </html>
