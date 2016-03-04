@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>AngularJS-Bookshop</title>
+  <link rel="stylesheet" href="jspm_packages/github/twbs/bootstrap@3.3.6/css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
 </head>
 
 <body>
 
-  <div class="header-wrapper">
-    <span class="logo pull-left">Bookshop</span>
-    <span class="tagline pull-left">The greatest collection of books in the world!</span>
+  <div id="header-wrapper" ng-controller="HeaderCtrl as header">
+    <span class="logo pull-left">{{header.title}}</span>
+    <span class="tagline pull-left">{{header.tagline}}</span>
     <div class="nav-wrapper pull-left">
       <ul class="nav nav-pills">
         <li class="active">

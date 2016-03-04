@@ -70,7 +70,7 @@ System.config({
     }
   },
 
-  meta: {
-    'github:twbs/bootstrap@3.3.6/js/bootstrap.js': { deps: ['../css/bootstrap.css!'] }
-  }
+  // meta: {
+  //   'github:twbs/bootstrap@3.3.6/js/bootstrap.js': { deps: ['../css/bootstrap.css!'] }
+  // }
 });
