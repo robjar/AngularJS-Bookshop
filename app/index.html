@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>AngularJS-Bookshop</title>
-  <link rel="stylesheet" href="jspm_packages/github/twbs/bootstrap@3.3.6/css/bootstrap.css"/>
-  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="jspm_packages/github/twbs/bootstrap@3.3.6/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -23,6 +23,30 @@
         </li>
       </ul>
     </div>
+  </div>
+
+  <div id="bookListWrapper" ng-controller="BookListCtrl">
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search...">
+      </div>
+    </form>
+    <ul class="list-unstyled">
+      <li class="book">
+        <div class="book-details clearfix">
+          <h3>Adultery</h3>
+          <p>205</p>
+          <ul class="list-unstyled list-inline">
+            <li>Rating: 4</li>
+            <li>Binding: Paperback</li>
+            <li>Publisher: You&me</li>
+            <li>Released: 30-02-2000</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quae doloremque dolores minus alias doloribus optio dolore, perspiciatis ullam. Nobis.</p>
+          <button class="btn btn-info pull-right">Add to cart</button>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <script src="jspm_packages/system.js"></script>
