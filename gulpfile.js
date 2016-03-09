@@ -1,6 +1,9 @@
 var gulp = require('gulp'),
   del = require('del'),
+  args = require('yargs').argv,
   $ = require('gulp-load-plugins')();
+
+gulp.task('help', $.taskListing);
 
 gulp.task('connect', function() {
   $.connect.server({
@@ -16,6 +19,7 @@ gulp.task('html', function () {
 
 gulp.task('lint', function () {
   gulp.src('app/js/**/*.js')
+    .pipe($.if(args.verbose, $.print()))
     .pipe($.jscs())
     .pipe($.jscs.reporter())
     .pipe($.jshint())
